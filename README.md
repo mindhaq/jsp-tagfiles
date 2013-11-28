@@ -14,7 +14,7 @@ from the project root folder
     cd webapp
     mvn tomcat7:run
     
-open http://localhost:8080/jsp-tagfiles-webapp/
+open [http://localhost:8080/jsp-tagfiles-webapp/](http://localhost:8080/jsp-tagfiles-webapp/) in your browser.
     
 Links
 -----
