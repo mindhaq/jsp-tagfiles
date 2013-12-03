@@ -1,39 +1,23 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<h1>
+    JSP 2.0 tag examples
+</h1>
 
-<%@ taglib prefix="example" tagdir="/WEB-INF/tags" %>
-<%@ taglib prefix="external" uri="http://www.mindhaq.com/examples/tld/examples.tld" %>
-
-<hr />
-
-<%-- tag with a simple attribute --%>
-<example:hello name="world" />
-
-<hr />
-
-<%-- tag with a body--%>
-<example:heading>
-    ${fn:substring('Way too long of a heading.', 0, 10)}
-</example:heading>
-
-<hr />
-
-<%-- tag with multiple fragments --%>
-<example:columns>
-    <jsp:attribute name="left">
-        <example:heading>
-            <example:hello name="world" />
-        </example:heading>
-    </jsp:attribute>
-    <jsp:attribute name="right">
-        Some more JSP content
-    </jsp:attribute>
-</example:columns>
-
-<hr />
-
-<%-- tag in an external tag library, returning a value into a given variable --%>
-<external:multichar var="stars" character="*" times="42" />
-<c:out value="${stars}" />
-
-<hr />
+<ol>
+    
+    <li>
+        <a href="simpleAttribute.jsp">Simple attribute</a>
+    </li>
+    
+    <li>
+        <a href="tagbody.jsp">Tag with a body</a>
+    </li>
+    
+    <li>
+        <a href="fragmented.jsp">Multiple fragments</a>
+    </li>
+    
+    <li>
+        <a href="externalLibAndReturn.jsp">Tag in an external library, returning a value</a>
+    </li>
+    
+</ol>
